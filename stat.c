@@ -11,23 +11,23 @@ void convert(long int num, char* new){
   //to store the floating point
   char fl[256];
   
-  if (new == "B"){
+  if (!strcmp(new, "B")){
     //printf("%ld %s", num, new);
     sprintf(fl, "%f", (float) num / 1);
   }
 
   long int divisor;
-  if (new == "KB"){
+  if (!strcmp(new, "KB")){
     divisor = 1024;
     sprintf(fl, "%f", (float) num / divisor);
   }
   
-  if(new == "MB"){
+  if(!strcmp(new, "MB")){
     divisor = (1024 * 1024);
     sprintf(fl, "%f", (float) num / divisor);
   }
   
-  if (new == "GB"){
+  if (!strcmp(new, "GB")){
     divisor = (1024 * 1024 * 1024);
     sprintf(fl, "%f", (float) num / divisor);
   }
