@@ -115,4 +115,5 @@ int main(){
   printf("File Permissions:\n");
   fp(sb.st_mode);
   printf("\n\n\nThat's all!\n");
+  return 0;
 }
